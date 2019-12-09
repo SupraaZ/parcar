@@ -29,11 +29,11 @@ public class Car
     public static void main(String[] args) throws InterruptedException{
     	Garage g = new Garage();
     	Car car = new Car(g);
-        car.accelerate();
-        slowDown();
-        moveDown();
-        accelerate();
-        car.printGarage();
+        car.accelerate();//Hay que llamar al objeto "car"
+        car.slowDown();//Hay que llamar al objeto "car"
+        car.moveDown();//Hay que llamar al objeto "car"
+        car.accelerate();//Hay que llamar al objeto "car"
+        g.printGarage();//Hay que llamar al objeto "g"
 //        turnRight();
 //        turnHeadlightsOn();
 //        turnHeadlightsOff();
@@ -59,7 +59,7 @@ public class Car
      * @throws InterruptedException 
      */
     public void slowDown() throws InterruptedException{
-    	string c = new string("     *");
+    	String c = new String("     *"); //La S de String va en mayuscula
     	for(int i=0; i<5; i++)
         {
         	System.out.print(c);
@@ -74,8 +74,8 @@ public class Car
      * @throws InterruptedException 
      */    
     public void moveDown() throws InterruptedException{
-    	string c = new string("\t\t\t\t  *"));
-    	for(int i=0, i<5, i++)
+    	String c = new String("\t\t\t\t  *");  //La S de String va en mayuscula, y habia un parentesis de más
+    	for(int i=0;i<5;i++)//para separar los campos, se hace con ;
         {
     		if(i!=4)
     			System.out.println(c);
